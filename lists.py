@@ -4,6 +4,18 @@
 # Tuple=() ordered and unchangeable, duplicates Ok, FASTER
 
 # fruits=["apple","orange","bannana","cocunit","kiwi","strawberry"]
+# fruits={"apple","orange","banana","coconut"}
+# print(help(fruits))
+# print(dir(fruits))
+# print(len(fruits))
+# print("pineapple" in fruits)
+
+# fruits.add("pineapple") #adds element to list
+# fruits.remove("apple") #removes element from list 
+# fruits.pop() #pops off the element at the end
+# fruits.clear() #clears 
+# print(fruits)
+
 # print(dir(fruits)) # prints out all the methods that come with the function 
 # print(help(fruits)) # tells us what each method does 
 # print(len(fruits)) # tells us how much is in each list
@@ -55,6 +67,68 @@
      #   break 
 
 
+#print(help(fruits))
+#print(dir(fruits))
+#print(len(fruits))
+#print("pineapple" in fruits)
+
+
+#TUPLES 
+#print(fruits.index("apple"))
+#print(fruits.count("coconut"))
+#print(fruits)
+#for fruit in fruits:
+#print(fruit)
+#fruits={"apple","orange","banana","coconut"}
+
+
+
+
+
+#DICTIONARY
+#dictionary=a collection of {key:value} pairs
+#               ordered and changable. No duplicates 
+capitals={"USA":"Washington D.C.",
+          "India": "New Delhi",
+          "China":"Beijing",
+          "Russia":"Moscow"}
+
+#print(dir(capitals))
+#print(help(capitals))
+capitals.get("USA")
+print(capitals.get("Japan"))
+if capitals.get("Japan"):
+    print("That capital exists")
+
+else:
+    print("That capital doesn't exist")  
+capitals.update({"Germany": "Berlin"})
+capitals.update({"USA":"Detroit"})
+capitals.pop("China")
+capitals.popitem()
+capitals.clear
+
+keys=capitals.keys()
+for key in capitals.keys():
+    print(key)
+
+print(capitals)    
+
+
+values=capitals.values()
+for value in capitals.values():
+  print(value)
+
+  items=capitals.items()
+  print(items)
+  for key, value in capitals.items():
+      print(f"{key}:{value}")
+
+
+
+
+
+
     #challange
     # create a list of friends
     # make sure the initial list is none
@@ -67,16 +141,16 @@
     # see if a particiular friend is in the list(boolean value)
     # if the list is greater than 10 break the loop
 
-friends=[]
-addFriend=input("add a friend please")
-friends.append(addFriend)
-print(friends)
-for friend in friends:
-        addFriend=input("add a friend please")
-        friends.append(addFriend)
-        print(friends)
-        if len(friends) >5:
-                break
+#friends=[]
+#addFriend=input("add a friend please")
+#friends.append(addFriend)
+#print(friends)
+#for friend in friends:
+        #addFriend=input("add a friend please")
+        #friends.append(addFriend)
+        #print(friends)
+        #if len(friends) >5:
+                #break
         
-friends.remove("alex")
-print(friends)
+#friends.remove("alex")
+#print(friends)
